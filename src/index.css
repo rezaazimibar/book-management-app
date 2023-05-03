@@ -3,6 +3,9 @@
 @tailwind utilities;
  
 @layer base {
+  body{
+    @apply bg-cBlack
+  }
   h1{
    @apply text-3xl mb-1
   }
