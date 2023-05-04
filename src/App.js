@@ -30,7 +30,7 @@ function App() {
         </nav>
         
       </header>
-      <main className="flex justify-end text-end"><Outlet/></main>
+      <main ><Outlet/></main>
     </>
   );
 }

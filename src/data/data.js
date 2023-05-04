@@ -33,3 +33,6 @@ let ObjectBooks = [
 export const GetBook = () => {
   return ObjectBooks;
 };
+export const FindBook = (number) => {
+  return ObjectBooks.find((book) => book.number === number);
+};

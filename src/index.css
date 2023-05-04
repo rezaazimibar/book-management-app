@@ -9,6 +9,9 @@
   h1{
    @apply text-3xl mb-1
   }
+  h2{
+   @apply text-2xl mb-1
+  }
 }
 body {
   margin: 0;
