@@ -1,4 +1,4 @@
-import { NavLink,Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -28,9 +28,10 @@ function App() {
             درباره ما
           </NavLink>
         </nav>
-        
       </header>
-      <main ><Outlet/></main>
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
