@@ -27,6 +27,14 @@ root.render(
           </Route>
           <Route path="/about" element={<About />} />
         </Route>
+        <Route
+          path="*"
+          element={
+            <main className="p-10 text-cSky flex justify-center">
+              <h1>صفحه مورد نظر یافت نشد</h1>
+            </main>
+          }
+        />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

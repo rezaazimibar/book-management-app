@@ -36,3 +36,6 @@ export const GetBook = () => {
 export const FindBook = (number) => {
   return ObjectBooks.find((book) => book.number === number);
 };
+export const deleteBook = (number) => {
+  ObjectBooks = ObjectBooks.filter((book) => book.number !== number);
+};

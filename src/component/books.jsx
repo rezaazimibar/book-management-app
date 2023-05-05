@@ -42,8 +42,8 @@ const Books = () => {
                   <div
                     className={
                       isActive
-                        ? " p-5 m-3 bg-cSky transition rounded-full text-xl translate-y-1 "
-                        : " bg-cCyan  p-5 m-3 hover:shadow-none hover:translate-y-1 transition rounded-full shadow-cSky text-xl shadow-lg"
+                        ? " p-5 m-3 bg-cSky  transition rounded-full text-xl translate-y-1 "
+                        : " bg-cCyan text-white  p-5 m-3 hover:shadow-none hover:translate-y-1 transition rounded-full shadow-cSky text-xl shadow-lg"
                     }
                   >
                     {book.name}
