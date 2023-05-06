@@ -6,6 +6,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import About from "./component/about";
 import Books from "./component/books";
 import Book from "./component/book";
+import Page404 from "./component/Page404";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -27,14 +28,7 @@ root.render(
           </Route>
           <Route path="/about" element={<About />} />
         </Route>
-        <Route
-          path="*"
-          element={
-            <main className="p-10 text-cSky flex justify-center">
-              <h1>صفحه مورد نظر یافت نشد</h1>
-            </main>
-          }
-        />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
