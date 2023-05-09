@@ -7,6 +7,7 @@ import About from "./component/about";
 import Books from "./component/books";
 import Book from "./component/book";
 import Page404 from "./component/Page404";
+import SearchYourBook from "./component/searchYourBook";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,15 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="/books" element={<Books />}>
-            <Route
-              index
-              element={
-                <main>
-                  <p>کتاب مورد نظر خود را وارد نمایید</p>
-                </main>
-              }
-            />
-
+            <Route index element={<SearchYourBook />} />
             <Route path="/books/:bookId" element={<Book />} />
           </Route>
           <Route path="/about" element={<About />} />
